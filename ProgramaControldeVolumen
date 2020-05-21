@@ -1,0 +1,17 @@
+int brillo;
+void setup()
+{
+  pinMode(3, OUTPUT);
+  pinMode(2, OUTPUT);
+  pinMode(1, OUTPUT);
+}
+
+void loop()
+{
+    brillo = analogRead(A0)/4;
+    analogWrite(3, brillo);
+  	brillo = analogRead(A0)/5;
+  	analogWrite(2, brillo);
+  	brillo = analogRead(A0)/7;
+  	analogWrite(1, brillo);
+}
